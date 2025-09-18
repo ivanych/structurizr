@@ -1,0 +1,1177 @@
+{
+  "configuration" : { },
+  "description" : "Description",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedDate" : "2025-09-02T01:26:56Z",
+  "model" : {
+    "deploymentNodes" : [ {
+      "children" : [ {
+        "containerInstances" : [ {
+          "containerId" : "4",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Development",
+          "id" : "27",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "development.b08646b0-e767-4be7-9d32-4af5fc0aff25.472cf85b-b3d9-410b-b0ad-a387434097c3.a4222490-46df-4f3b-9e2e-5a356a5722cd"
+          },
+          "relationships" : [ {
+            "description" : "Просматривает товары",
+            "destinationId" : "28",
+            "id" : "29",
+            "linkedRelationshipId" : "20",
+            "sourceId" : "27",
+            "technology" : "HTTPS"
+          }, {
+            "description" : "Добавляет товары в корзину",
+            "destinationId" : "30",
+            "id" : "31",
+            "linkedRelationshipId" : "21",
+            "sourceId" : "27",
+            "technology" : "HTTPS"
+          }, {
+            "description" : "Создаёт заказы",
+            "destinationId" : "32",
+            "id" : "33",
+            "linkedRelationshipId" : "22",
+            "sourceId" : "27",
+            "technology" : "HTTPS"
+          } ],
+          "tags" : "Container Instance"
+        } ],
+        "environment" : "Development",
+        "id" : "26",
+        "instances" : "1",
+        "name" : "Browser",
+        "properties" : {
+          "structurizr.dsl.identifier" : "development.b08646b0-e767-4be7-9d32-4af5fc0aff25.472cf85b-b3d9-410b-b0ad-a387434097c3"
+        },
+        "tags" : "Element,Deployment Node"
+      }, {
+        "containerInstances" : [ {
+          "containerId" : "5",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Development",
+          "id" : "35",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "development.b08646b0-e767-4be7-9d32-4af5fc0aff25.9dbfbd5b-15d1-45c5-a469-42639abb0edb.7fcfab95-0544-45a5-b0c5-7cd932b494c5"
+          },
+          "tags" : "Container Instance"
+        }, {
+          "containerId" : "11",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Development",
+          "id" : "37",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "development.b08646b0-e767-4be7-9d32-4af5fc0aff25.9dbfbd5b-15d1-45c5-a469-42639abb0edb.a135db48-9c4a-4119-b246-7b3dafa8d42e"
+          },
+          "tags" : "Container Instance"
+        } ],
+        "environment" : "Development",
+        "id" : "34",
+        "instances" : "1",
+        "name" : "Postgres",
+        "properties" : {
+          "structurizr.dsl.identifier" : "development.b08646b0-e767-4be7-9d32-4af5fc0aff25.9dbfbd5b-15d1-45c5-a469-42639abb0edb"
+        },
+        "tags" : "Element,Deployment Node"
+      }, {
+        "containerInstances" : [ {
+          "containerId" : "8",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Development",
+          "id" : "40",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "development.b08646b0-e767-4be7-9d32-4af5fc0aff25.93245583-e2c9-4147-8d31-5cc358092d42.00b40e7e-9358-4916-8f6a-907e609e940a"
+          },
+          "tags" : "Container Instance"
+        } ],
+        "environment" : "Development",
+        "id" : "39",
+        "instances" : "1",
+        "name" : "Tarantool",
+        "properties" : {
+          "structurizr.dsl.identifier" : "development.b08646b0-e767-4be7-9d32-4af5fc0aff25.93245583-e2c9-4147-8d31-5cc358092d42"
+        },
+        "tags" : "Element,Deployment Node"
+      } ],
+      "containerInstances" : [ {
+        "containerId" : "6",
+        "deploymentGroups" : [ "Default" ],
+        "environment" : "Development",
+        "id" : "28",
+        "instanceId" : 1,
+        "properties" : {
+          "structurizr.dsl.identifier" : "development.b08646b0-e767-4be7-9d32-4af5fc0aff25.67f85427-76a8-4bca-93a3-d918689dc40c"
+        },
+        "relationships" : [ {
+          "description" : "Читает данные из базы",
+          "destinationId" : "35",
+          "id" : "36",
+          "linkedRelationshipId" : "7",
+          "sourceId" : "28"
+        } ],
+        "tags" : "Container Instance"
+      }, {
+        "containerId" : "9",
+        "deploymentGroups" : [ "Default" ],
+        "environment" : "Development",
+        "id" : "30",
+        "instanceId" : 1,
+        "properties" : {
+          "structurizr.dsl.identifier" : "development.b08646b0-e767-4be7-9d32-4af5fc0aff25.838239fc-3f1a-4c09-baea-cc8ea9674376"
+        },
+        "relationships" : [ {
+          "description" : "Читает данные из хотстораджа",
+          "destinationId" : "40",
+          "id" : "41",
+          "linkedRelationshipId" : "10",
+          "sourceId" : "30"
+        } ],
+        "tags" : "Container Instance"
+      }, {
+        "containerId" : "12",
+        "deploymentGroups" : [ "Default" ],
+        "environment" : "Development",
+        "id" : "32",
+        "instanceId" : 1,
+        "properties" : {
+          "structurizr.dsl.identifier" : "development.b08646b0-e767-4be7-9d32-4af5fc0aff25.ae4f63be-8034-4d61-8429-81a39f65b7ff"
+        },
+        "relationships" : [ {
+          "description" : "Читает данные из базы",
+          "destinationId" : "37",
+          "id" : "38",
+          "linkedRelationshipId" : "13",
+          "sourceId" : "32"
+        }, {
+          "description" : "Передаёт сведения о заказах",
+          "destinationId" : "46",
+          "id" : "47",
+          "linkedRelationshipId" : "14",
+          "sourceId" : "32"
+        } ],
+        "tags" : "Container Instance"
+      } ],
+      "environment" : "Development",
+      "id" : "25",
+      "instances" : "1",
+      "name" : "Developer Comp",
+      "properties" : {
+        "structurizr.dsl.identifier" : "development.b08646b0-e767-4be7-9d32-4af5fc0aff25"
+      },
+      "tags" : "Element,Deployment Node"
+    }, {
+      "environment" : "Development",
+      "id" : "42",
+      "instances" : "1",
+      "name" : "Yandex DC",
+      "properties" : {
+        "structurizr.dsl.identifier" : "development.6202f4a6-3a02-41f8-a5dc-75c56bb0faa2"
+      },
+      "softwareSystemInstances" : [ {
+        "deploymentGroups" : [ "Default" ],
+        "environment" : "Development",
+        "id" : "43",
+        "instanceId" : 1,
+        "properties" : {
+          "structurizr.dsl.identifier" : "development.6202f4a6-3a02-41f8-a5dc-75c56bb0faa2.e6c8fbde-354d-42dd-bf75-82d6a28aed57"
+        },
+        "relationships" : [ {
+          "description" : "Передаёт сведения об оплатах",
+          "destinationId" : "32",
+          "id" : "44",
+          "linkedRelationshipId" : "23",
+          "sourceId" : "43"
+        } ],
+        "softwareSystemId" : "16",
+        "tags" : "Software System Instance"
+      } ],
+      "tags" : "Element,Deployment Node"
+    }, {
+      "environment" : "Development",
+      "id" : "45",
+      "instances" : "1",
+      "name" : "Store DC",
+      "properties" : {
+        "structurizr.dsl.identifier" : "development.88dc32f4-118c-40ca-8b95-3276ad0bf564"
+      },
+      "softwareSystemInstances" : [ {
+        "deploymentGroups" : [ "Default" ],
+        "environment" : "Development",
+        "id" : "46",
+        "instanceId" : 1,
+        "properties" : {
+          "structurizr.dsl.identifier" : "development.88dc32f4-118c-40ca-8b95-3276ad0bf564.05086bcb-b195-400c-9ecb-c3a283912c64"
+        },
+        "softwareSystemId" : "2",
+        "tags" : "Software System Instance"
+      } ],
+      "tags" : "Element,Deployment Node"
+    }, {
+      "children" : [ {
+        "containerInstances" : [ {
+          "containerId" : "4",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Production",
+          "id" : "50",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "production.n_user_comp.n_browser.i_ui"
+          },
+          "relationships" : [ {
+            "description" : "Просматривает товары",
+            "destinationId" : "53",
+            "id" : "54",
+            "linkedRelationshipId" : "20",
+            "sourceId" : "50",
+            "technology" : "HTTPS"
+          }, {
+            "description" : "Добавляет товары в корзину",
+            "destinationId" : "55",
+            "id" : "56",
+            "linkedRelationshipId" : "21",
+            "sourceId" : "50",
+            "technology" : "HTTPS"
+          }, {
+            "description" : "Создаёт заказы",
+            "destinationId" : "57",
+            "id" : "58",
+            "linkedRelationshipId" : "22",
+            "sourceId" : "50",
+            "technology" : "HTTPS"
+          }, {
+            "destinationId" : "69",
+            "id" : "74",
+            "sourceId" : "50",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Container Instance"
+        } ],
+        "environment" : "Production",
+        "id" : "49",
+        "instances" : "1",
+        "name" : "Browser",
+        "properties" : {
+          "structurizr.dsl.identifier" : "production.n_user_comp.n_browser"
+        },
+        "tags" : "Element,Deployment Node"
+      } ],
+      "environment" : "Production",
+      "id" : "48",
+      "instances" : "1",
+      "name" : "User Comp",
+      "properties" : {
+        "structurizr.dsl.identifier" : "production.n_user_comp"
+      },
+      "tags" : "Element,Deployment Node"
+    }, {
+      "children" : [ {
+        "containerInstances" : [ {
+          "containerId" : "6",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Production",
+          "id" : "53",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "production.n_store_dc.n_docker.i_catalog_app"
+          },
+          "relationships" : [ {
+            "description" : "Читает данные из базы",
+            "destinationId" : "60",
+            "id" : "61",
+            "linkedRelationshipId" : "7",
+            "sourceId" : "53"
+          } ],
+          "tags" : "Container Instance"
+        }, {
+          "containerId" : "9",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Production",
+          "id" : "55",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "production.n_store_dc.n_docker.152220f4-4481-4330-89c7-dd6e8219f123"
+          },
+          "relationships" : [ {
+            "description" : "Читает данные из хотстораджа",
+            "destinationId" : "65",
+            "id" : "66",
+            "linkedRelationshipId" : "10",
+            "sourceId" : "55"
+          } ],
+          "tags" : "Container Instance"
+        }, {
+          "containerId" : "12",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Production",
+          "id" : "57",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "production.n_store_dc.n_docker.231ab3b2-7875-4eb6-9f2e-b22c18e87b90"
+          },
+          "relationships" : [ {
+            "description" : "Читает данные из базы",
+            "destinationId" : "62",
+            "id" : "63",
+            "linkedRelationshipId" : "13",
+            "sourceId" : "57"
+          }, {
+            "description" : "Передаёт сведения о заказах",
+            "destinationId" : "67",
+            "id" : "68",
+            "linkedRelationshipId" : "14",
+            "sourceId" : "57"
+          } ],
+          "tags" : "Container Instance"
+        } ],
+        "environment" : "Production",
+        "id" : "52",
+        "instances" : "1",
+        "name" : "Docker",
+        "properties" : {
+          "structurizr.dsl.identifier" : "production.n_store_dc.n_docker"
+        },
+        "tags" : "Element,Deployment Node"
+      }, {
+        "containerInstances" : [ {
+          "containerId" : "5",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Production",
+          "id" : "60",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "production.n_store_dc.1fa5f1a9-4e9e-4994-bdbc-c7f26b546e07.f1b4d264-bcc3-4bc3-a13b-57f8f95ba96f"
+          },
+          "tags" : "Container Instance"
+        }, {
+          "containerId" : "11",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Production",
+          "id" : "62",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "production.n_store_dc.1fa5f1a9-4e9e-4994-bdbc-c7f26b546e07.9610fd2a-5d88-4e5f-a0c3-afa2646609a9"
+          },
+          "tags" : "Container Instance"
+        } ],
+        "environment" : "Production",
+        "id" : "59",
+        "instances" : "1",
+        "name" : "Postgres",
+        "properties" : {
+          "structurizr.dsl.identifier" : "production.n_store_dc.1fa5f1a9-4e9e-4994-bdbc-c7f26b546e07"
+        },
+        "tags" : "Element,Deployment Node"
+      }, {
+        "containerInstances" : [ {
+          "containerId" : "8",
+          "deploymentGroups" : [ "Default" ],
+          "environment" : "Production",
+          "id" : "65",
+          "instanceId" : 1,
+          "properties" : {
+            "structurizr.dsl.identifier" : "production.n_store_dc.bcd8a98c-be20-443a-9680-03aab26bc379.f4b6d46c-4c71-4db5-88c9-7e870d5024cf"
+          },
+          "tags" : "Container Instance"
+        } ],
+        "environment" : "Production",
+        "id" : "64",
+        "instances" : "3",
+        "name" : "Tarantool",
+        "properties" : {
+          "structurizr.dsl.identifier" : "production.n_store_dc.bcd8a98c-be20-443a-9680-03aab26bc379"
+        },
+        "tags" : "Element,Deployment Node"
+      } ],
+      "environment" : "Production",
+      "id" : "51",
+      "infrastructureNodes" : [ {
+        "environment" : "Production",
+        "id" : "69",
+        "name" : "Nginx",
+        "properties" : {
+          "structurizr.dsl.identifier" : "production.n_store_dc.nginx"
+        },
+        "relationships" : [ {
+          "destinationId" : "53",
+          "id" : "70",
+          "sourceId" : "69",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Infrastructure Node"
+      } ],
+      "instances" : "1",
+      "name" : "Store DC",
+      "properties" : {
+        "structurizr.dsl.identifier" : "production.n_store_dc"
+      },
+      "softwareSystemInstances" : [ {
+        "deploymentGroups" : [ "Default" ],
+        "environment" : "Production",
+        "id" : "67",
+        "instanceId" : 1,
+        "properties" : {
+          "structurizr.dsl.identifier" : "production.n_store_dc.dcc3149a-4d59-4aa6-b7cb-11baba7da8df"
+        },
+        "softwareSystemId" : "2",
+        "tags" : "Software System Instance"
+      } ],
+      "tags" : "Element,Deployment Node"
+    }, {
+      "environment" : "Production",
+      "id" : "71",
+      "instances" : "1",
+      "name" : "Yandex DC",
+      "properties" : {
+        "structurizr.dsl.identifier" : "production.b8f03675-8f92-4a9d-b191-ae054aaa5609"
+      },
+      "softwareSystemInstances" : [ {
+        "deploymentGroups" : [ "Default" ],
+        "environment" : "Production",
+        "id" : "72",
+        "instanceId" : 1,
+        "properties" : {
+          "structurizr.dsl.identifier" : "production.b8f03675-8f92-4a9d-b191-ae054aaa5609.f0899a42-acc1-4730-a474-5044b91277ed"
+        },
+        "relationships" : [ {
+          "description" : "Передаёт сведения об оплатах",
+          "destinationId" : "57",
+          "id" : "73",
+          "linkedRelationshipId" : "23",
+          "sourceId" : "72"
+        } ],
+        "softwareSystemId" : "16",
+        "tags" : "Software System Instance"
+      } ],
+      "tags" : "Element,Deployment Node"
+    } ],
+    "people" : [ {
+      "description" : "Покупает товары",
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "Пользователь",
+      "properties" : {
+        "structurizr.dsl.identifier" : "customer"
+      },
+      "relationships" : [ {
+        "description" : "Покупает товары",
+        "destinationId" : "3",
+        "id" : "17",
+        "sourceId" : "1",
+        "tags" : "Relationship,Synchronous",
+        "technology" : "HTTPS"
+      }, {
+        "description" : "Использует веб-интерфейс",
+        "destinationId" : "4",
+        "id" : "18",
+        "sourceId" : "1",
+        "tags" : "Relationship,Synchronous",
+        "technology" : "HTTPS"
+      }, {
+        "description" : "Оплачивает заказы",
+        "destinationId" : "16",
+        "id" : "19",
+        "sourceId" : "1",
+        "tags" : "Relationship,Synchronous",
+        "technology" : "HTTPS"
+      } ],
+      "tags" : "Element,Person"
+    } ],
+    "softwareSystems" : [ {
+      "description" : "Бэк-офис",
+      "documentation" : { },
+      "group" : "Магазин",
+      "id" : "2",
+      "location" : "Unspecified",
+      "name" : "1C",
+      "properties" : {
+        "structurizr.dsl.identifier" : "1c"
+      },
+      "tags" : "Element,Software System,External"
+    }, {
+      "containers" : [ {
+        "description" : "Веб-интерфейс магазина",
+        "documentation" : { },
+        "id" : "4",
+        "name" : "UI",
+        "properties" : {
+          "structurizr.dsl.identifier" : "store.ui"
+        },
+        "relationships" : [ {
+          "description" : "Просматривает товары",
+          "destinationId" : "6",
+          "id" : "20",
+          "sourceId" : "4",
+          "tags" : "Relationship,Synchronous,balanced",
+          "technology" : "HTTPS"
+        }, {
+          "description" : "Добавляет товары в корзину",
+          "destinationId" : "9",
+          "id" : "21",
+          "sourceId" : "4",
+          "tags" : "Relationship,Synchronous,balanced",
+          "technology" : "HTTPS"
+        }, {
+          "description" : "Создаёт заказы",
+          "destinationId" : "12",
+          "id" : "22",
+          "sourceId" : "4",
+          "tags" : "Relationship,Synchronous,balanced",
+          "technology" : "HTTPS"
+        } ],
+        "tags" : "Element,Container,Frontend",
+        "technology" : "Node"
+      }, {
+        "description" : "Хранит товары",
+        "documentation" : { },
+        "group" : "Каталог",
+        "id" : "5",
+        "name" : "База каталога",
+        "properties" : {
+          "structurizr.dsl.identifier" : "store.catalog_db"
+        },
+        "tags" : "Element,Container,Database",
+        "technology" : "PostgreSQL"
+      }, {
+        "description" : "Предоставляет доступ к товарам",
+        "documentation" : { },
+        "group" : "Каталог",
+        "id" : "6",
+        "name" : "API Каталога",
+        "properties" : {
+          "structurizr.dsl.identifier" : "store.catalog_app"
+        },
+        "relationships" : [ {
+          "description" : "Читает данные из базы",
+          "destinationId" : "5",
+          "id" : "7",
+          "sourceId" : "6",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,Application",
+        "technology" : "Python"
+      }, {
+        "description" : "Хранит корзины",
+        "documentation" : { },
+        "group" : "Корзина",
+        "id" : "8",
+        "name" : "База корзины",
+        "properties" : {
+          "structurizr.dsl.identifier" : "store.cart_hs"
+        },
+        "tags" : "Element,Container,Hotstorage",
+        "technology" : "Tarantool"
+      }, {
+        "description" : "Предоставляет доступ к корзинам",
+        "documentation" : { },
+        "group" : "Корзина",
+        "id" : "9",
+        "name" : "API Корзины",
+        "properties" : {
+          "structurizr.dsl.identifier" : "store.cart_app"
+        },
+        "relationships" : [ {
+          "description" : "Читает данные из хотстораджа",
+          "destinationId" : "8",
+          "id" : "10",
+          "sourceId" : "9",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,Application",
+        "technology" : "Python"
+      }, {
+        "description" : "Хранит заказы",
+        "documentation" : { },
+        "group" : "Заказы",
+        "id" : "11",
+        "name" : "База заказов",
+        "properties" : {
+          "structurizr.dsl.identifier" : "store.orders_db"
+        },
+        "tags" : "Element,Container,Database",
+        "technology" : "PostgreSQL"
+      }, {
+        "description" : "Принимает и обрабатывает заказы",
+        "documentation" : {
+          "decisions" : [ {
+            "content" : "# Раз\n\nDate: 2016-02-12\n\n## Status\n\nDeprecated\n\nAmended by [ADR 3](#3)\n\n## Context\n\nWe need to record the architectural decisions made on this project.\n\n## Decision\n\nWe will use Architecture Decision Records, as described by Michael Nygard in this article: http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions\n\n## Consequences\n\nSee Michael Nygard's article, linked above.\n",
+            "date" : "2016-02-12T00:00:00Z",
+            "format" : "Markdown",
+            "id" : "1",
+            "links" : [ {
+              "description" : "Amended by",
+              "id" : "3"
+            } ],
+            "status" : "Deprecated",
+            "title" : " Раз"
+          }, {
+            "content" : "# Два\n\nDate: 2016-12-17\n\n## Status\n\nDeprecated\n\n## Context\n\nPackagers (e.g. Homebrew developers) want to configure adr-tools to match the conventions of their installation.\n\nCurrently, this is done by sourcing a file `config.sh`, which should sit beside the `adr` executable.\n\nThis name is too common.\n\nThe `config.sh` file is not executable, and so doesn't belong in a bin directory.\n\n## Decision\n\nReplace `config.sh` with an executable, named `adr-config` that outputs configuration.\n\nEach script in ADR Tools will eval the output of `adr-config` to configure itself.\n\n## Consequences\n\nConfiguration within ADR Tools is a little more complicated.\n\nPackagers can write their own implementation of `adr-config` that outputs configuration that matches the platform's installation conventions, and deploy it next to the `adr` script.\n\nTo make development easier, the implementation of `adr-config` in the project's src/ directory will output configuration that lets the tool to run from the src/ directory without any installation step. (Packagers should not include this script in a deployable package.)\n",
+            "date" : "2016-12-17T00:00:00Z",
+            "format" : "Markdown",
+            "id" : "2",
+            "status" : "Deprecated",
+            "title" : " Два"
+          }, {
+            "content" : "# Три\n\nDate: 2016-12-18\n\n## Status\n\nProposed\n\nAmends [ADR 1](#1)\n\n## Context\n\nPackagers (e.g. Homebrew developers) want to configure adr-tools to match the conventions of their installation.\n\nCurrently, this is done by sourcing a file `config.sh`, which should sit beside the `adr` executable.\n\nThis name is too common.\n\nThe `config.sh` file is not executable, and so doesn't belong in a bin directory.\n\n## Decision\n\nReplace `config.sh` with an executable, named `adr-config` that outputs configuration.\n\nEach script in ADR Tools will eval the output of `adr-config` to configure itself.\n\n## Consequences\n\nConfiguration within ADR Tools is a little more complicated.\n\nPackagers can write their own implementation of `adr-config` that outputs configuration that matches the platform's installation conventions, and deploy it next to the `adr` script.\n\nTo make development easier, the implementation of `adr-config` in the project's src/ directory will output configuration that lets the tool to run from the src/ directory without any installation step. (Packagers should not include this script in a deployable package.)\n",
+            "date" : "2016-12-18T00:00:00Z",
+            "format" : "Markdown",
+            "id" : "3",
+            "links" : [ {
+              "description" : "Amends",
+              "id" : "1"
+            } ],
+            "status" : "Proposed",
+            "title" : " Три"
+          }, {
+            "content" : "# Четыре\n\nDate: 2025-12-17\n\n## Status\n\nAccepted\n\n## Context\n\nPackagers (e.g. Homebrew developers) want to configure adr-tools to match the conventions of their installation.\n\nCurrently, this is done by sourcing a file `config.sh`, which should sit beside the `adr` executable.\n\nThis name is too common.\n\nThe `config.sh` file is not executable, and so doesn't belong in a bin directory.\n\n## Decision\n\nReplace `config.sh` with an executable, named `adr-config` that outputs configuration.\n\nEach script in ADR Tools will eval the output of `adr-config` to configure itself.\n\n## Consequences\n\nConfiguration within ADR Tools is a little more complicated.\n\nPackagers can write their own implementation of `adr-config` that outputs configuration that matches the platform's installation conventions, and deploy it next to the `adr` script.\n\nTo make development easier, the implementation of `adr-config` in the project's src/ directory will output configuration that lets the tool to run from the src/ directory without any installation step. (Packagers should not include this script in a deployable package.)\n",
+            "date" : "2025-12-17T00:00:00Z",
+            "format" : "Markdown",
+            "id" : "4",
+            "status" : "Accepted",
+            "title" : " Четыре"
+          } ],
+          "sections" : [ {
+            "content" : "# Заказы индекс один 1\n\n## Заказы индекс два 2\n\nзаказы индекс текст\n",
+            "filename" : "index.md",
+            "format" : "Markdown",
+            "order" : 1,
+            "title" : ""
+          } ]
+        },
+        "group" : "Заказы",
+        "id" : "12",
+        "name" : "API Заказов",
+        "properties" : {
+          "structurizr.dsl.identifier" : "store.orders_app"
+        },
+        "relationships" : [ {
+          "description" : "Читает данные из базы",
+          "destinationId" : "11",
+          "id" : "13",
+          "sourceId" : "12",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Передаёт сведения о заказах",
+          "destinationId" : "2",
+          "id" : "14",
+          "sourceId" : "12",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,Application",
+        "technology" : "Python"
+      } ],
+      "description" : "Продаёт товары",
+      "documentation" : {
+        "decisions" : [ {
+          "content" : "# Маназин раз\n\nDate: 2016-02-12\n\n## Status\n\nDeprecated\n\nAmended by [ADR 3](0003_test_two.md)\n\n## Context\n\nvfuf\n\n## Decision\n\nWe will use Architecture Decision Records, as described by Michael Nygard in this article: http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions\n\n## Consequences\n\nSee Michael Nygard's article, linked above.\n",
+          "date" : "2016-02-12T00:00:00Z",
+          "format" : "Markdown",
+          "id" : "1",
+          "status" : "Deprecated",
+          "title" : " Маназин раз"
+        } ],
+        "sections" : [ {
+          "content" : "# Магазин уровень один\n\n## Магазин уровень два\n\nСистемный контекст контекста:\n\n![](embed:store)\n\n### Магазин уровень три\n\nМагазинт текст три",
+          "filename" : "01_store.md",
+          "format" : "Markdown",
+          "order" : 1,
+          "title" : ""
+        }, {
+          "content" : "# Заказы систем один 1\n\n## Заказы систем два 2 \n\nзаказы систем текст\n",
+          "filename" : "02_orders.md",
+          "format" : "Markdown",
+          "order" : 2,
+          "title" : ""
+        } ]
+      },
+      "group" : "Магазин",
+      "id" : "3",
+      "location" : "Unspecified",
+      "name" : "Интернет-магазин",
+      "properties" : {
+        "structurizr.dsl.identifier" : "store"
+      },
+      "relationships" : [ {
+        "description" : "Передаёт сведения о заказах",
+        "destinationId" : "2",
+        "id" : "15",
+        "linkedRelationshipId" : "14",
+        "sourceId" : "3"
+      } ],
+      "tags" : "Element,Software System"
+    }, {
+      "description" : "Принимает платежи",
+      "documentation" : { },
+      "id" : "16",
+      "location" : "Unspecified",
+      "name" : "Платежный сервис",
+      "properties" : {
+        "structurizr.dsl.identifier" : "paymentsystem"
+      },
+      "relationships" : [ {
+        "description" : "Передаёт сведения об оплатах",
+        "destinationId" : "12",
+        "id" : "23",
+        "sourceId" : "16",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Передаёт сведения об оплатах",
+        "destinationId" : "3",
+        "id" : "24",
+        "linkedRelationshipId" : "23",
+        "sourceId" : "16"
+      } ],
+      "tags" : "Element,Software System,External"
+    } ]
+  },
+  "name" : "Name",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJOYW1lIiAiRGVzY3JpcHRpb24iIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCgogICAgbW9kZWwgewogICAgICAgIGFyY2hldHlwZXMgewogICAgICAgICAgICBhcHAgPSBjb250YWluZXIgewogICAgICAgICAgICAgICAgdGFncyAiQXBwbGljYXRpb24iCiAgICAgICAgICAgIH0KICAgICAgICAgICAgYXBwX3B5ID0gYXBwIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlB5dGhvbiIKICAgICAgICAgICAgfQogICAgICAgIAogICAgICAgICAgICBkYiA9IGNvbnRhaW5lciB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJQb3N0Z3JlU1FMIgogICAgICAgICAgICAgICAgdGFncyAiRGF0YWJhc2UiCiAgICAgICAgICAgIH0KICAgICAgICAKICAgICAgICAgICAgaHMgPSBjb250YWluZXIgewogICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiVGFyYW50b29sIgogICAgICAgICAgICAgICAgdGFncyAiSG90c3RvcmFnZSIKICAgICAgICAgICAgfQogICAgICAgIAogICAgICAgICAgICBmcm9udCA9IGNvbnRhaW5lciB7CiAgICAgICAgICAgICAgICB0YWdzICJGcm9udGVuZCIKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIk5vZGUiCiAgICAgICAgICAgIH0KICAgICAgICAKICAgICAgICAgICAgIyDQodCy0Y/Qt9C4CiAgICAgICAgICAgIHN5bmMgPSAtPiB7CiAgICAgICAgICAgICAgICB0YWdzICJTeW5jaHJvbm91cyIKICAgICAgICAgICAgfQogICAgICAgICAgICBodHRwcyA9IC0tc3luYy0+IHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkhUVFBTIgogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICAjINCc0L7QtNC10LvRjAogICAgICAgIGN1c3RvbWVyID0gcGVyc29uICLQn9C+0LvRjNC30L7QstCw0YLQtdC70YwiICLQn9C+0LrRg9C/0LDQtdGCINGC0L7QstCw0YDRiyIKICAgICAgICAKICAgICAgICBncm91cCAi0JzQsNCz0LDQt9C40L0iIHsKICAgICAgICAgICAgMWMgPSBzb2Z0d2FyZVN5c3RlbSAiMUMiICLQkdGN0Lot0L7RhNC40YEiICJFeHRlcm5hbCIKICAgICAgICAKICAgICAgICAgICAgc3RvcmUgPSBzb2Z0d2FyZVN5c3RlbSAi0JjQvdGC0LXRgNC90LXRgi3QvNCw0LPQsNC30LjQvSIgItCf0YDQvtC00LDRkdGCINGC0L7QstCw0YDRiyIgewogICAgICAgICAgICAgICAgIWRvY3MgZG9jcwogICAgICAgICAgICAgICAgIWFkcnMgYWRycwogICAgICAgIAogICAgICAgICAgICAgICAgIyBVSQogICAgICAgICAgICAgICAgdWkgPSBmcm9udCAiVUkiICLQktC10LEt0LjQvdGC0LXRgNGE0LXQudGBINC80LDQs9Cw0LfQuNC90LAiCiAgICAgICAgCiAgICAgICAgICAgICAgICAjINCa0LDRgtCw0LvQvtCzCiAgICAgICAgICAgICAgICBncm91cCAi0JrQsNGC0LDQu9C+0LMiIHsKICAgICAgICAgICAgICAgICAgICBjYXRhbG9nX2RiID0gZGIgItCR0LDQt9CwINC60LDRgtCw0LvQvtCz0LAiICLQpdGA0LDQvdC40YIg0YLQvtCy0LDRgNGLIgogICAgICAgICAgICAgICAgICAgIGNhdGFsb2dfYXBwID0gYXBwX3B5ICJBUEkg0JrQsNGC0LDQu9C+0LPQsCIgItCf0YDQtdC00L7RgdGC0LDQstC70Y/QtdGCINC00L7RgdGC0YPQvyDQuiDRgtC+0LLQsNGA0LDQvCIgewogICAgICAgICAgICAgICAgICAgICAgICAtPiBzdG9yZS5jYXRhbG9nX2RiICLQp9C40YLQsNC10YIg0LTQsNC90L3Ri9C1INC40Lcg0LHQsNC30YsiCiAgICAgICAgICAgICAgICAgICAgICAgICMhZG9jcyBkb2NzL2NhdGFsb2cKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgCiAgICAgICAgICAgICAgICB9CiAgICAgICAgCiAgICAgICAgICAgICAgICAjINCa0L7RgNC30LjQvdCwCiAgICAgICAgICAgICAgICBncm91cCAi0JrQvtGA0LfQuNC90LAiIHsKICAgICAgICAgICAgICAgICAgICBjYXJ0X2hzID0gaHMgItCR0LDQt9CwINC60L7RgNC30LjQvdGLIiAi0KXRgNCw0L3QuNGCINC60L7RgNC30LjQvdGLIgogICAgICAgICAgICAgICAgICAgIGNhcnRfYXBwID0gYXBwX3B5ICJBUEkg0JrQvtGA0LfQuNC90YsiICLQn9GA0LXQtNC+0YHRgtCw0LLQu9GP0LXRgiDQtNC+0YHRgtGD0L8g0Log0LrQvtGA0LfQuNC90LDQvCIgewogICAgICAgICAgICAgICAgICAgICAgICAjIWRvY3MgZG9jcy9jYXJ0CiAgICAgICAgICAgICAgICAgICAgICAgIC0+IHN0b3JlLmNhcnRfaHMgItCn0LjRgtCw0LXRgiDQtNCw0L3QvdGL0LUg0LjQtyDRhdC+0YLRgdGC0L7RgNCw0LTQttCwIgogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAKICAgICAgICAgICAgICAgICMg0JfQsNC60LDQt9GLCiAgICAgICAgICAgICAgICBncm91cCAi0JfQsNC60LDQt9GLIiB7CiAgICAgICAgICAgICAgICAgICAgb3JkZXJzX2RiID0gZGIgItCR0LDQt9CwINC30LDQutCw0LfQvtCyIiAi0KXRgNCw0L3QuNGCINC30LDQutCw0LfRiyIKICAgICAgICAgICAgICAgICAgICBvcmRlcnNfYXBwID0gYXBwX3B5ICJBUEkg0JfQsNC60LDQt9C+0LIiICLQn9GA0LjQvdC40LzQsNC10YIg0Lgg0L7QsdGA0LDQsdCw0YLRi9Cy0LDQtdGCINC30LDQutCw0LfRiyIgewogICAgICAgICAgICAgICAgICAgICAgICAtPiBzdG9yZS5vcmRlcnNfZGIgItCn0LjRgtCw0LXRgiDQtNCw0L3QvdGL0LUg0LjQtyDQsdCw0LfRiyIKICAgICAgICAgICAgICAgICAgICAgICAgLT4gMWMgItCf0LXRgNC10LTQsNGR0YIg0YHQstC10LTQtdC90LjRjyDQviDQt9Cw0LrQsNC30LDRhSIKICAgICAgICAgICAgICAgICAgICAgICAgIWRvY3MgZG9jcy9vcmRlcnMKICAgICAgICAgICAgICAgICAgICAgICAgIWFkcnMgYWRycy9vcmRlcnMKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAKICAgICAgICAKICAgICAgICAKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgcGF5bWVudFN5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICLQn9C70LDRgtC10LbQvdGL0Lkg0YHQtdGA0LLQuNGBIiAi0J/RgNC40L3QuNC80LDQtdGCINC/0LvQsNGC0LXQttC4IiAiRXh0ZXJuYWwiCiAgICAgICAgCiAgICAgICAgIyDQodCy0Y/Qt9C4CiAgICAgICAgY3VzdG9tZXIgLS1odHRwcy0+IHN0b3JlICLQn9C+0LrRg9C/0LDQtdGCINGC0L7QstCw0YDRiyIKICAgICAgICBjdXN0b21lciAtLWh0dHBzLT4gc3RvcmUudWkgItCY0YHQv9C+0LvRjNC30YPQtdGCINCy0LXQsS3QuNC90YLQtdGA0YTQtdC50YEiCiAgICAgICAgY3VzdG9tZXIgLS1odHRwcy0+IHBheW1lbnRTeXN0ZW0gItCe0L/Qu9Cw0YfQuNCy0LDQtdGCINC30LDQutCw0LfRiyIKICAgICAgICAKICAgICAgICBzdG9yZS51aSAtLWh0dHBzLT4gc3RvcmUuY2F0YWxvZ19hcHAgItCf0YDQvtGB0LzQsNGC0YDQuNCy0LDQtdGCINGC0L7QstCw0YDRiyIgewogICAgICAgICAgICB0YWdzICJiYWxhbmNlZCIKICAgICAgICB9CiAgICAgICAgc3RvcmUudWkgLS1odHRwcy0+IHN0b3JlLmNhcnRfYXBwICLQlNC+0LHQsNCy0LvRj9C10YIg0YLQvtCy0LDRgNGLINCyINC60L7RgNC30LjQvdGDIiB7CiAgICAgICAgICAgIHRhZ3MgImJhbGFuY2VkIgogICAgICAgIH0KICAgICAgICBzdG9yZS51aSAtLWh0dHBzLT4gc3RvcmUub3JkZXJzX2FwcCAi0KHQvtC30LTQsNGR0YIg0LfQsNC60LDQt9GLIiB7CiAgICAgICAgICAgIHRhZ3MgImJhbGFuY2VkIgogICAgICAgIH0KICAgICAgICAKICAgICAgICBwYXltZW50U3lzdGVtIC0+IHN0b3JlLm9yZGVyc19hcHAgItCf0LXRgNC10LTQsNGR0YIg0YHQstC10LTQtdC90LjRjyDQvtCxINC+0L/Qu9Cw0YLQsNGFIgoKICAgICAgICAjINCe0LrRgNGD0LbQtdC90LjRjwogICAgICAgIGRldmVsb3BtZW50ID0gZGVwbG95bWVudEVudmlyb25tZW50ICJEZXZlbG9wbWVudCIgewogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiRGV2ZWxvcGVyIENvbXAiIHsKICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJCcm93c2VyIiB7CiAgICAgICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2Ugc3RvcmUudWkKICAgICAgICAgICAgICAgIH0KICAgICAgICAKICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHN0b3JlLmNhdGFsb2dfYXBwCiAgICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBzdG9yZS5jYXJ0X2FwcAogICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2Ugc3RvcmUub3JkZXJzX2FwcAogICAgICAgIAogICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIlBvc3RncmVzIiB7CiAgICAgICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2Ugc3RvcmUuY2F0YWxvZ19kYgogICAgICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHN0b3JlLm9yZGVyc19kYgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIlRhcmFudG9vbCIgewogICAgICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHN0b3JlLmNhcnRfaHMKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiWWFuZGV4IERDIiB7CiAgICAgICAgICAgICAgICBzb2Z0d2FyZVN5c3RlbUluc3RhbmNlIHBheW1lbnRTeXN0ZW0KICAgICAgICAgICAgfQogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiU3RvcmUgREMiIHsKICAgICAgICAgICAgICAgIHNvZnR3YXJlU3lzdGVtSW5zdGFuY2UgMWMKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICAKICAgICAgICBwcm9kdWN0aW9uID0gZGVwbG95bWVudEVudmlyb25tZW50ICJQcm9kdWN0aW9uIiB7CiAgICAgICAgICAgIG5fdXNlcl9jb21wID0gZGVwbG95bWVudE5vZGUgIlVzZXIgQ29tcCIgewogICAgICAgICAgICAgICAgbl9icm93c2VyID0gZGVwbG95bWVudE5vZGUgIkJyb3dzZXIiIHsKICAgICAgICAgICAgICAgICAgICBpX3VpID0gY29udGFpbmVySW5zdGFuY2Ugc3RvcmUudWkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIAogICAgICAgICAgICBuX3N0b3JlX2RjID0gZGVwbG95bWVudE5vZGUgIlN0b3JlIERDIiB7CiAgICAgICAgCiAgICAgICAgICAgICAgICBuX2RvY2tlciA9IGRlcGxveW1lbnROb2RlICJEb2NrZXIiIHsKICAgICAgICAgICAgICAgICAgICBpX2NhdGFsb2dfYXBwID0gY29udGFpbmVySW5zdGFuY2Ugc3RvcmUuY2F0YWxvZ19hcHAKICAgICAgICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBzdG9yZS5jYXJ0X2FwcAogICAgICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHN0b3JlLm9yZGVyc19hcHAKICAgICAgICAgICAgICAgIH0KICAgICAgICAKICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJQb3N0Z3JlcyIgewogICAgICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHN0b3JlLmNhdGFsb2dfZGIKICAgICAgICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBzdG9yZS5vcmRlcnNfZGIKICAgICAgICAgICAgICAgIH0KICAgICAgICAKICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJUYXJhbnRvb2wiIHsKICAgICAgICAgICAgICAgICAgICBpbnN0YW5jZXMgMwogICAgICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIHN0b3JlLmNhcnRfaHMKICAgICAgICAgICAgICAgIH0KICAgICAgICAKICAgICAgICAgICAgICAgIHNvZnR3YXJlU3lzdGVtSW5zdGFuY2UgMWMKICAgICAgICAKICAgICAgICAgICAgICAgIG5naW54ID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJOZ2lueCIgewogICAgICAgICAgICAgICAgICAgIC0+IG5fZG9ja2VyLmlfY2F0YWxvZ19hcHAKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIAogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiWWFuZGV4IERDIiB7CiAgICAgICAgICAgICAgICBzb2Z0d2FyZVN5c3RlbUluc3RhbmNlIHBheW1lbnRTeXN0ZW0KICAgICAgICAgICAgfQogICAgICAgIAogICAgICAgICAgICBuX3VzZXJfY29tcC5uX2Jyb3dzZXIuaV91aSAtPiBuX3N0b3JlX2RjLm5naW54CiAgICAgICAgCiAgICAgICAgfQogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICBzeXN0ZW1MYW5kc2NhcGUgbWFnYXogItCc0LDQs9Cw0LfQuNC9INC4INCy0L3QtdGI0L3QuNC1INGB0LjRgdGC0LXQvNGLIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvbGF5b3V0IHRiCiAgICAgICAgfQogICAgICAgIHN5c3RlbUNvbnRleHQgc3RvcmUgc3RvcmUgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgZXhjbHVkZSAxYwogICAgICAgICAgICBhdXRvbGF5b3V0IHRiCiAgICAgICAgfQogICAgICAgIGNvbnRhaW5lciBzdG9yZSBEaWFncmFtMiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvbGF5b3V0IHRiCiAgICAgICAgfQogICAgICAgIGRlcGxveW1lbnQgKiBkZXZlbG9wbWVudCB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvTGF5b3V0IHRiCiAgICAgICAgfQogICAgICAgIGRlcGxveW1lbnQgKiBwcm9kdWN0aW9uIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGV4Y2x1ZGUgcmVsYXRpb25zaGlwLnRhZz09YmFsYW5jZWQKICAgICAgICAgICAgYXV0b0xheW91dCB0YgogICAgICAgIH0KICAgICAgICB0aGVtZSBkZWZhdWx0CgogICAgICAgICMg0JTQuNC90LjQsNC80LjRh9C10YHQutC40LUg0LTQuNCw0LPRgNCw0LzQvNGLCiAgICAgICAgZHluYW1pYyBzdG9yZSBjcmVhdGVfb3JkZXIgewogICAgICAgICAgICB0aXRsZSAi0KHQvtC30LTQsNC90LjQtSDQt9Cw0LrQsNC30LAiCiAgICAgICAgICAgIHN0b3JlLnVpIC0+IHN0b3JlLmNhdGFsb2dfYXBwICLQl9Cw0L/RgNC+0YHQuNGC0Ywg0YLQvtCy0LDRgNGLINC40Lcg0LrQsNGC0LDQu9C+0LPQsCIKICAgICAgICAgICAgc3RvcmUuY2F0YWxvZ19hcHAgLT4gc3RvcmUudWkgItCf0L7Qu9GD0YfQuNGC0Ywg0YLQvtCy0LDRgNGLICjQuNC00LXQvdGC0LjRhNC40LrQsNGC0L7RgNGLINGC0L7QstCw0YDQvtCyKSIKICAgICAgICAgICAgc3RvcmUudWkgLT4gc3RvcmUuY2FydF9hcHAgItCU0L7QsdCw0LLQuNGC0Ywg0YLQvtCy0LDRgCAo0LjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0YLQvtCy0LDRgNCwKSDQsiDQutC+0YDQt9C40L3RgyIKICAgICAgICAgICAgc3RvcmUudWkgLT4gc3RvcmUuY2FydF9hcHAgItCX0LDQv9GA0L7RgdC40YLRjCDRgtC+0LLQsNGA0Ysg0LjQtyDQutC+0YDQt9C40L3RiyIKICAgICAgICAgICAgc3RvcmUuY2FydF9hcHAgLT4gc3RvcmUudWkgItCf0L7Qu9GD0YfQuNGC0Ywg0YLQvtCy0LDRgNGLICjQuNC00LXQvdGC0LjRhNC40LrQsNGC0L7RgNGLINGC0L7QstCw0YDQvtCyKSIKICAgICAgICAgICAgc3RvcmUudWkgLT4gc3RvcmUub3JkZXJzX2FwcCAiQ9C+0LfQtNCw0YLRjCDQt9Cw0LrQsNC3ICjQuNC00LXQvdGC0LjRhNC40LrQsNGC0L7RgCDRgtC+0LLQsNGA0LAsINGG0LXQvdCwIGV0YykiCiAgICAgICAgICAgIHN0b3JlLm9yZGVyc19hcHAgLT4gc3RvcmUub3JkZXJzX2RiICLQodC+0YXRgNCw0L3QuNGC0Ywg0LfQsNC60LDQtyDQsiDQsdCw0LfRgyIKICAgICAgICAgICAgYXV0b2xheW91dCBscgogICAgICAgIH0KCiAgICAgICAgc3R5bGVzIHsKICAgICAgICAgICAgZWxlbWVudCAiRGF0YWJhc2UiIHsKICAgICAgICAgICAgICAgIHNoYXBlIGN5bGluZGVyCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiSG90c3RvcmFnZSIgewogICAgICAgICAgICAgICAgc2hhcGUgRWxsaXBzZQogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkZyb250ZW5kIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBXZWJCcm93c2VyCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiRXh0ZXJuYWwiIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzk5OTk5OQogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9"
+  },
+  "views" : {
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "store",
+      "styles" : {
+        "elements" : [ {
+          "shape" : "Cylinder",
+          "tag" : "Database"
+        }, {
+          "shape" : "Ellipse",
+          "tag" : "Hotstorage"
+        }, {
+          "shape" : "WebBrowser",
+          "tag" : "Frontend"
+        }, {
+          "background" : "#999999",
+          "color" : "#ffffff",
+          "tag" : "External"
+        } ]
+      },
+      "terminology" : { },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ]
+    },
+    "containerViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "5",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "6",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "8",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "9",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "11",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "12",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "key" : "Diagram2",
+      "order" : 3,
+      "relationships" : [ {
+        "id" : "10"
+      }, {
+        "id" : "13"
+      }, {
+        "id" : "14"
+      }, {
+        "id" : "18"
+      }, {
+        "id" : "19"
+      }, {
+        "id" : "20"
+      }, {
+        "id" : "21"
+      }, {
+        "id" : "22"
+      }, {
+        "id" : "23"
+      }, {
+        "id" : "7"
+      } ],
+      "softwareSystemId" : "3"
+    } ],
+    "deploymentViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elements" : [ {
+        "id" : "25",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "26",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "27",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "28",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "30",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "32",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "34",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "35",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "37",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "39",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "40",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "42",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "43",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "45",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "46",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "environment" : "Development",
+      "generatedKey" : true,
+      "key" : "Deployment-001",
+      "order" : 4,
+      "relationships" : [ {
+        "id" : "29"
+      }, {
+        "id" : "31"
+      }, {
+        "id" : "33"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "38"
+      }, {
+        "id" : "41"
+      }, {
+        "id" : "44"
+      }, {
+        "id" : "47"
+      } ]
+    }, {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elements" : [ {
+        "id" : "48",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "49",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "50",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "51",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "52",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "53",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "55",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "57",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "59",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "60",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "62",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "64",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "65",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "67",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "69",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "71",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "72",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "environment" : "Production",
+      "generatedKey" : true,
+      "key" : "Deployment-002",
+      "order" : 5,
+      "relationships" : [ {
+        "id" : "61"
+      }, {
+        "id" : "63"
+      }, {
+        "id" : "66"
+      }, {
+        "id" : "68"
+      }, {
+        "id" : "70"
+      }, {
+        "id" : "73"
+      }, {
+        "id" : "74"
+      } ]
+    } ],
+    "dynamicViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elementId" : "3",
+      "elements" : [ {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "6",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "9",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "11",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "12",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalBoundariesVisible" : false,
+      "key" : "create_order",
+      "order" : 6,
+      "relationships" : [ {
+        "description" : "Запросить товары из каталога",
+        "id" : "20",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Получить товары (идентификаторы товаров)",
+        "id" : "20",
+        "order" : "2",
+        "response" : true
+      }, {
+        "description" : "Добавить товар (идентификатор товара) в корзину",
+        "id" : "21",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Запросить товары из корзины",
+        "id" : "21",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Получить товары (идентификаторы товаров)",
+        "id" : "21",
+        "order" : "5",
+        "response" : true
+      }, {
+        "description" : "Cоздать заказ (идентификатор товара, цена etc)",
+        "id" : "22",
+        "order" : "6",
+        "response" : false
+      }, {
+        "description" : "Сохранить заказ в базу",
+        "id" : "13",
+        "order" : "7",
+        "response" : false
+      } ],
+      "title" : "Создание заказа"
+    } ],
+    "systemContextViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "key" : "store",
+      "order" : 2,
+      "relationships" : [ {
+        "id" : "17"
+      }, {
+        "id" : "19"
+      }, {
+        "id" : "24"
+      } ],
+      "softwareSystemId" : "3"
+    } ],
+    "systemLandscapeViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "description" : "Магазин и внешние системы",
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "key" : "magaz",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "15"
+      }, {
+        "id" : "17"
+      }, {
+        "id" : "19"
+      }, {
+        "id" : "24"
+      } ]
+    } ]
+  }
+}
