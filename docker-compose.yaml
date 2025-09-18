@@ -1,9 +1,15 @@
 version: "2"
 
 services:
-  nifi:
+  lite:
     image: structurizr/lite
     ports:
       - ${STRUCTURIZR_HOST_PORT}:${STRUCTURIZR_CONTAINER_PORT}
+    volumes:
+      - ./c4:/usr/local/structurizr
+  onpremises:
+    image: structurizr/onpremises
+    ports:
+      - 8081:8080
     volumes:
       - ./c4:/usr/local/structurizr
