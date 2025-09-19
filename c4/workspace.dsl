@@ -1,4 +1,5 @@
-workspace "Name" "Description" {
+workspace {
+    name "Интернет Магазин"
 
     !identifiers hierarchical
 
